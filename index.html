@@ -18,15 +18,16 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     
-    @media(max-width:375px){
+    
+    @media(max-width:599px){
   body{
     background-color: hsl(30, 38%, 92%);
   }
   .mono{
     font-family:"Montserrat";
     font-weight:bold;
-    font-size:10px;
-    padding-top:20px;
+    font-size:15px;
+    padding-top:30px;
     padding-left:20px;
     color:hsl(228, 12%, 70%);
   }
@@ -34,6 +35,8 @@
     width:70%;
     display: flex;
     justify-content:space-around;
+    margin-bottom:10px;
+    width:65%;
     padding-left:10px;
     
   }
@@ -41,39 +44,49 @@
     font-size:200%;
     font-family:"Fraunces";
     font-weight:bold;
-    color :hsl(158, 36%, 40%);
+    color :hsl(158, 36%, 37%);
     padding-top:20px;
+    height:59%;
     
   }
   .white{
     background-color: hsl(0,0%,100%);
     width:100%;
+    border-radius:5px;
     
+  }
+  .smaller{
+    width:5.1%;
+    margin-right:2px;
   }
   .bttn{
     color:white;
-    background-color:hsl(158, 36%, 40%);
+    background-color:hsl(158, 36%, 37%);
     padding:10px;
     text-align:center;
     width :300px;
-    border-radius:15px;
+    border-radius:10px;
     height:50px;
     font-weight:bold;
   }
   p{
-    font-family:"";
     font-size:14px;
     width:300px;
     color:hsl(228, 12%, 48%);
+    line-height:170%;
+    
   }
   h1{
     font-family:"Fraunces";
     width:320px;
     color:hsl(212, 21%, 14%);
     padding-left:10px;
+    font-weight:300px;
   }
   img{
     width:100%;
+    border-radius:2px;
+    
   }
   .btndiv{
     display:flex;
@@ -85,45 +98,151 @@
     background-color: hsl(158, 36%, 25%);
   }
     .container{
-      border-radius:40%;
       display:flex;
       flex-direction:column;
       align-items:center;
+      padding:15px;
   }
   .call{
     font-family:"Fraunces";
-    padding-left:20px; 
-    padding-top:20px;
+    padding-top:30px;
+    color:hsl(228, 12%, 48%);
   }
     }
+    @media(min-width:600px){
+      
+      body{
+    background-color: hsl(30, 38%, 92%);
+  }
+  .mono{
+    font-family:"Montserrat";
+    font-weight:bold;
+    font-size:15px;
+    padding-top:30px;
+    padding-left:20px;
+    color:hsl(228, 12%, 70%);
+  }
+  .con{
+    width:70%;
+    display: flex;
+    justify-content:space-around;
+    margin-bottom:10px;
+    width:65%;
+    padding-left:10px;
+    
+  }
+  .st{
+    font-size:200%;
+    font-family:"Fraunces";
+    font-weight:bold;
+    color :hsl(158, 36%, 37%);
+    padding-top:20px;
+    height:59%;
+    
+  }
+  .white{
+    background-color: hsl(0,0%,100%);
+    width:100%;
+    border-radius:5px;
+    display:flex;
+    position:relative;
+    top:550px;
+  
+  }
+  .half{
+
+
+  }
+  .smaller{
+    width:5.1%;
+    margin-right:2px;
+  }
+  .bttn{
+    color:white;
+    background-color:hsl(158, 36%, 37%);
+    padding:10px;
+    text-align:center;
+    width :300px;
+    border-radius:10px;
+    height:50px;
+    font-weight:bold;
+  }
+  p{
+    font-size:14px;
+    width:300px;
+    color:hsl(228, 12%, 48%);
+    line-height:170%;
+    
+  }
+  h1{
+    font-family:"Fraunces";
+    width:320px;
+    color:hsl(212, 21%, 14%);
+    padding-left:10px;
+    font-weight:300px;
+  }
+  img{
+    width:95%;
+    border-radius:2px;
+    
+  }
+  .btndiv{
+    display:flex;
+    justify-content: center;
+  }
+  
+  button:hover{
+    
+    background-color: hsl(158, 36%, 25%);
+  }
+    .container{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      padding:15px;
+  }
+  .call{
+    font-family:"Fraunces";
+    padding-top:30px;
+    color:hsl(228, 12%, 48%);
+  }
+  .vis{
+    display: none;
+  }
+    }
+    
   </style>
 </head>
 <body>
+  <div class="fix">
   <div class="container">
-  <img src="image-product-mobile.jpg" alt="picture of a perfume bottle">
+ <
 <div class="white">
+  <div >
+   <img src="image-product-mobile.jpg" alt="picture of a perfume bottle">
+   </div>
+   <div class="half">
   <div class="mono">P E R F U M E </div>
 
   <h1>Gabrielle Essence Eau De Parfum</h1>
 
-  <p style="padding-left:10px;">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.</p>
+  <p style="padding-left:10px;">A floral, solar and voluptuous <br>interpretation composed by Olivier Polge, 
+  Perfumer-Creator for the House of <br>CHANEL.</p>
   
 <div class="con">
   <div class="st">$149.99</div>
   <div class="call"><s>$169.99</s></div>
 </div>
-  <div class="btndiv"><button type="submit" class="bttn">Add to Cart</button>
+  <div class="btndiv"><button type="submit" class="bttn"><img src="icon-cart.svg" alt="shopping cart icon" class="smaller"> Add to Cart</button>
   </div>
   <br>
-  <br>
+  </div>
   </div>
   
   
   </div>
-  
-  
-  <div class="attribution">
+  </div>
+  <div class="attribution vis">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#"> Chibuike</a>.
   </div>
